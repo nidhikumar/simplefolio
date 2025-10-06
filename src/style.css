@@ -489,4 +489,24 @@
       right: 20px;
     }
   }
+  /* --- FIX ROTATED IMAGES (Conference Section) --- */
+#conference .gallery-track img {
+    object-fit: cover;
+    height: 280px;
+    width: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Force upright orientation for images with EXIF rotation */
+  #conference .gallery-track img[alt*="SWE Conference"] {
+    transform: rotate(90deg);
+  }
+  
+  /* Optional: adjust when rotated (keeps it centered visually) */
+  @media (max-width: 768px) {
+    #conference .gallery-track img[alt*="SWE Conference"] {
+      transform: rotate(90deg) scale(0.9);
+    }
+  }
   
