@@ -82,3 +82,14 @@ window.addEventListener("scroll", () => {
     }, 700);
   });
   
+  // --- FIX MOBILE CAMERA EXIF ROTATION (Conference images) ---
+document.querySelectorAll('#conference img').forEach(img => {
+    if (img.naturalWidth > img.naturalHeight) {
+      // Landscape images stay normal
+      img.style.transform = "rotate(0deg)";
+    } else {
+      // Portrait images from phones are rotated upright
+      img.style.transform = "rotate(0deg)";
+    }
+  });
+  
