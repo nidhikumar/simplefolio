@@ -1,980 +1,397 @@
 <!DOCTYPE html>
-<html lang="en" class="sr">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nidhi Kumar | Software Engineer</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
 
-    <!-- Todo: put here your site title -->
-    <title>Nidhi Kumar | Software Developer</title>
-    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Todo: improve your SEO by adding a small description of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+  <!-- Fonts & Libraries -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="styles.scss" />
-    <script
-      defer
-      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
-    ></script>
+<body>
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
 
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+  <!-- HERO SECTION -->
+  <header id="hero">
+    <div class="hero-container">
+      <h1 data-aos="fade-up">Nidhi Kumar</h1>
+      <p data-aos="fade-up" data-aos-delay="100">
+        Software Engineer | Solving problems through code and creativity
+      </p>
+      <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+        <a href="#about" class="cta-btn">Know More</a>
+        <a href="assets/Nidhi_Resume.pdf" target="_blank" class="cta-btn">View Resume</a>
+      </div>
+    </div>
+  </header>
 
-  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
-  <body>
-    <div id="top"></div>
-
-    <!-- **** Hero Section **** -->
-    <section id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Nidhi Kumar</span>
-          <br />
-          I'm a Software Developer.
-        </h1>
-        <p class="hero-cta load-hidden">
-          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
-            >Know more</a
-          >
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2 class="section-title" data-aos="fade-up">About Me</h2>
+    <div class="about-wrapper" data-aos="fade-up" data-tilt data-tilt-max="5">
+      <div class="about-photo">
+        <img src="assets/dp.jpg" alt="Profile photo" class="profile-img" />
+      </div>
+      <div class="about-text">
+        <p>
+          I’m a Software Engineer passionate about building scalable, high-performance web applications. 
+          My work blends strong backend engineering with intuitive UI design — from cloud-based microservices 
+          to responsive React front-ends. I love solving complex problems that make technology more human, 
+          reliable, and accessible.
+        </p>
+        <p>
+          Currently working at Amazon to 
+          enhance seller experiences through innovative platform solutions. Pursued my MS in Computer Science at the University of Washington. 
+          Outside of work, I find joy in travel, dance, and photography.
         </p>
       </div>
-    </section>
-    <!-- /END Hero Section -->
+    </div>
+  </section>
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title load-hidden">About me</h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image load-hidden">
-              <img
-                alt="Profile Image"
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="assets/dp.jpg"
-                alt="Profile Image"
-              />
-            </div>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info load-hidden">
-              <p class="about-wrapper__info-text">
-                Master's student at University of Washington, cooking up code
-                magic.
-              </p>
-              <p class="about-wrapper__info-text">
-                Passionate about two things: food and travel. On a mission to
-                taste every cuisine the world has to offer.
-              </p>
-              <p class="about-wrapper__info-text">
-                Let's make tech fun and fabulous together!
-              </p>
-              <span class="d-flex mt-3">
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn cta-btn--resume"
-                  href="assets/Nidhi_Kumar_Resume.pdf"
-                >
-                  View Resume
-                </a>
-              </span>
-            </div>
-          </div>
-        </div>
+  <!-- EXPERIENCE SECTION -->
+  <section id="experience" class="section">
+    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+
+    <!-- WORK EXPERIENCE -->
+    <h3 class="subsection-title" data-aos="fade-up"><i class="fas fa-briefcase"></i> Work Experience</h3>
+    <div class="timeline">
+      <div class="timeline-item left" data-aos="fade-right">
+        <h4>Amazon .com Inc</h4>
+        <p class="role">Software Development Engineer</p>
+        <p class="duration">Mar 2025 – Present | Seattle, WA</p>
+        <ul>
+          <li>Developed the Seller Central Homepage to display top forums and news, increasing engagement.</li>
+          <li>Built the Seller Insights platform integrating feedback across social & support channels for MLP launch.</li>
+          <li>Owned on-call rotations ensuring reliability and mentored new engineers during onboarding.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END About Section -->
 
-    <!-- **** Experience Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Software Experience</h2>
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Software Developer Intern, Amazon
-                </h3>
-                <b><p>Seattle, USA (Jun'24 - Aug'24)</p></b>
-                <div>
-                  <p class="mb-4">
-                    Conceptualized and implemented an interactive poll feature,
-                    enabling Amazon sellers to create engaging polls and gather
-                    valuable customer insights. Used Java for building
-                    microservices and APIs, ReactJS for frontend, DynamoDB for
-                    storing data, and multiple AWS features. Enhanced sellers'
-                    ability to make data-driven decisions by providing direct
-                    feedback on market trends and consumer preferences,
-                    increasing seller engagement by 45%. Significantly increased
-                    customer engagement and interaction, fostering a more
-                    community-driven marketplace and improving seller
-                    strategies.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img
-                        alt="Day 1 @ Amazon"
-                        class="img-fluid"
-                        src="assets/IMG_4172.jpg"
-                      />
-                      <p class="image-title">Day 1 @ Amazon</p>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="My Team"
-                        class="img-fluid"
-                        src="assets/IMG_5775.jpg"
-                      />
-                      <p class="image-title">My Team</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Software Developer, Texas Instruments
-                </h3>
-                <b><p>Bangalore, India (Aug'21 - Aug'23)</p></b>
-                <div>
-                  <p class="mb-4">
-                    Developed customer-centric applications on ti.com, boosting
-                    usability and driving significant sales growth. Automated
-                    critical business processes, cutting onboarding time from 2
-                    weeks to 2 hours and reducing manual processing by 90%.
-                    Implemented streamlined, compliant processes for secure
-                    government documentation storage. Built Rest APIs for
-                    efficient order placement, tracking, invoicing, and
-                    inventory management.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/ti1.jpg"
-                      />
-                      <p class="image-title">Women's Day at TI</p>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/ti2.jpg"
-                      />
-                      <p class="image-title">TI Hackathon</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Software Developer Intern, Texas Instruments
-                </h3>
-                <b><p>Bangalore, India (Feb'21 - Jul'21)</p></b>
-                <div>
-                  <p class="mb-4">
-                    Architected and implemented a dynamic dashboard leveraging
-                    SpringBoot and ReactJS within the ERP system, catering to a
-                    user base of over 1000 employees. This innovation
-                    streamlined real-time inventory tracking, elevating the
-                    speed and efficiency of order distribution by the Product
-                    Distribution Centre team by an impressive 60%. Engineered an
-                    insightful analytical dashboard to provide timely
-                    notifications on job statuses within Oracle HCM, enhancing
-                    user awareness and overall operational transparency. This
-                    initiative contributed to improved decision-making and
-                    workflow management within the organization.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/workation.jpg"
-                      />
-                      <p class="image-title">Workation</p>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/wfh.jpg"
-                      />
-                      <p class="image-title">Work-From-Home</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Software Developer Intern, Quinbay
-                </h3>
-                <b><p>Bangalore, India (Jul'20 - Jan'21)</p></b>
-                <div>
-                  <p class="mb-4">
-                    I developed sophisticated transcription algorithms using AWS
-                    and Flask API, which seamlessly transcribe audio and video
-                    files into text through the utilization of AWS Transcribe.
-                    Additionally, I designed an application centered on image
-                    text extraction, employing cutting-edge object detection
-                    algorithms and integrating Google Vision OCR. This
-                    application underwent real-time testing by users, proving
-                    its efficacy in practical scenarios. Furthermore, I created
-                    and implemented an application leveraging Natural Language
-                    Processing (NLP) to extract crucial phrases and keywords.
-                    This NLP-based solution enhances the extraction of pertinent
-                    data from financial records, optimizing efficiency and
-                    accuracy in information retrieval.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/quinbay2.jpg"
-                      />
-                      <p class="image-title">
-                        After launching our first project at 2 AM
-                      </p>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/quinbay1.jpg"
-                      />
-                      <p class="image-title">Regular day at work</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Summer Intern, HighRadius
-                </h3>
-                <b><p>Bhubaneswar, India (Apr'20 - Jun'20)</p></b>
-                <div>
-                  <p class="mb-4">
-                    I created a website using React JS that keeps tabs on
-                    payment processes in the B2B Accounts Receivable system. The
-                    site includes a user-friendly chatbot built with Dialog Flow
-                    for interactive communication. Additionally, I incorporated
-                    machine learning models to analyze data, providing valuable
-                    insights for more informed decision-making.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/hrc1.jpeg"
-                      />
-                      <p class="image-title">My first office</p>
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/hrc2.jpeg"
-                      />
-                      <p class="image-title">HRC Office - KIIT Campus</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-        </div>
+      <div class="timeline-item right" data-aos="fade-left">
+        <h4>Texas Instruments</h4>
+        <p class="role">Software Developer</p>
+        <p class="duration">Aug 2021 – Aug 2023 | Bangalore, India</p>
+        <ul>
+          <li>Built ti.com applications with SpringBoot & StencilJS, enhancing usability and sales growth.</li>
+          <li>Automated critical business processes with UiPath/Xceptor reducing onboarding from 2 weeks to 2 hours.</li>
+          <li>Created secure API systems for order tracking and invoice generation using REST microservices.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END Experience Section -->
+    </div>
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
-
-          <!-- MeTILDA Project -->
-          <!-- MeTILDA Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  MeTILDA (Melodic Transcription in Language Documentation &
-                  Application)
-                </h3>
-                <b><p>Graduate Capstone Project (Jul'24)</p></b>
-                <div>
-                  <p class="mb-4">
-                    Developed and enhanced the MeTILDA platform, a tool for
-                    creating visual pitch guides and analyzing linguistic rhythm
-                    and melody, supporting language documentation and
-                    pronunciation for researchers, teachers, and students.
-                    Utilized Flask and ReactJS for backend and frontend
-                    development.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/metilda-uw/metilda"
-                >
-                  Source Code
-                </a>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://metilda.herokuapp.com/"
-                >
-                  Application Link
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a
-                  rel="noreferrer"
-                  href="https://metilda.herokuapp.com/"
-                  target="_blank"
-                >
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="MeTILDA Project Image"
-                      class="img-fluid"
-                      src="assets/screenshot-metilda.jpg"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-          <!-- Blood-Bank iOS App Project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Blood-Bank iOS App</h3>
-                <b><p>Graduate Project (Jan'24)</p></b>
-                <div>
-                  <p class="mb-4">
-                    Developed an iOS blood bank app using Flutter that notifies
-                    users within a vicinity of blood donation needs and allows
-                    individuals to request blood, enhancing community response
-                    and support for blood donations.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/nidhikumar/blood-bank"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-3">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/project-blood-bank-1.jpg"
-                      />
-                    </div>
-                    <div class="col-md-3">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/project-blood-bank-2.jpg"
-                      />
-                    </div>
-                    <div class="col-md-3">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/project-blood-bank-3.jpg"
-                      />
-                    </div>
-                    <div class="col-md-3">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/project-blood-bank-4.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">
-                  Content Based Image Retrieval
-                </h3>
-                <div>
-                  <p class="mb-4">
-                    Crafted an intuitive image search system that lets you sort
-                    through pictures by color, brightness, or a delightful blend
-                    of both. Taking it a step further, I implemented a unique
-                    feature - a dynamic relevance feedback mechanism. This
-                    allows users to fine-tune search results and boost precision
-                    through iterative selection of similar images. Picture this:
-                    the more you interact, the smarter it becomes, learning and
-                    adapting to your preferences. It's not just a search tool;
-                    it's your personalized image concierge, making each search
-                    an evolving and tailored experience. Discover the joy of
-                    finding the perfect match effortlessly!
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/nidhikumar/CBIR-Relevance-Feedback"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/proj1.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Budget Manager</h3>
-                <div>
-                  <p class="mb-4">
-                    Developed a user-friendly Android app in Java for efficient
-                    expense management. The application enables seamless
-                    categorization, captures receipts, and maintains detailed
-                    records. Additionally, users can effortlessly split expenses
-                    among multiple users for simplified group transactions.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/BM1.png"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/BM2.png"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Wave 2D using MPI</h3>
-                <div>
-                  <p class="mb-4">
-                    Using MPI and OpenMP, we parallelize a two-dimensional wave
-                    diffusion simulation. The simulation models Schroedinger's
-                    wave dissemination in a square mesh, with cells computing
-                    new surface heights based on neighboring cells and a wave
-                    formula. The goal was to efficiently simulate wave
-                    propagation in a parallelized manner.
-                  </p>
-                </div>
-                <a
-                  rel="noreferrer"
-                  target="_blank"
-                  class="cta-btn text-color-main"
-                  href="https://github.com/nidhikumar/wave_2D"
-                >
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <img
-                      alt="Project Image"
-                      class="img-fluid"
-                      src="assets/mpi.png"
-                    />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-        </div>
+    <!-- INTERNSHIPS -->
+    <h3 class="subsection-title" data-aos="fade-up"><i class="fas fa-laptop-code"></i> Internships</h3>
+    <div class="timeline">
+      <div class="timeline-item left" data-aos="fade-right">
+        <h4>Amazon .com Inc</h4>
+        <p class="role">Software Developer Intern</p>
+        <p class="duration">Jun 2024 – Aug 2024 | Seattle, WA</p>
+        <ul>
+          <li>Designed and implemented interactive poll features for Amazon sellers, boosting engagement by 45%.</li>
+          <li>Enhanced data-driven decision-making by aggregating real-time market insights and feedback.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Conference Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Conference Attended</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Society of Women Engineers, Chicago - October 2024</h3>
-                <div>
-                  <p class="mb-4">
-                    Attended the Society of Women Engineers (SWE) 2024 conference in Chicago, where I connected with talented engineers, 
-                    participated in insightful sessions, and engaged in meaningful discussions on advancing diversity in tech. Represented my university, 
-                    UW, on scholarship and expanded my network while deepening my knowledge across various topics, from emerging technologies to leadership in STEM. 
-                    This experience fueled my passion for empowering women in tech and strengthened my commitment to fostering inclusive and innovative spaces 
-                    in engineering.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/IMG_7850.jpg"
-                        style="transform: rotate(90deg);"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/IMG_8003.jpg"
-                        style="transform: rotate(90deg);"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-          <!-- /END Project -->
-
-        </div>
+      <div class="timeline-item right" data-aos="fade-left">
+        <h4>Texas Instruments</h4>
+        <p class="role">Software Developer Intern</p>
+        <p class="duration">Feb 2021 – Jul 2021 | Bangalore, India</p>
+        <ul>
+          <li>Built an ERP dashboard with SpringBoot + ReactJS for 1000+ employees, improving efficiency by 60%.</li>
+          <li>Developed an analytics dashboard to track Oracle HCM job statuses and streamline HR operations.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Community Work Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Community Work</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Back-To-School</h3>
-                <div>
-                  <p class="mb-4">
-                    Dedicated efforts to support underprivileged students in
-                    remote villages by facilitating access to essential
-                    educational resources such as schoolbooks, bags, and other
-                    necessary supplies. We also distributed food supplies.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/cw1.jpg"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/cw2.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">KIIT NSS Drives</h3>
-                <div>
-                  <p class="mb-4">
-                    As an active participant in the KIIT NSS drive, I played a
-                    significant role in uplifting the education of
-                    underprivileged children. I dedicated my time and expertise
-                    to teach mathematics and basic English to these children,
-                    contributing to their academic growth and helping bridge
-                    educational gaps. Through this initiative, the aim was to
-                    empower these young minds with essential knowledge and
-                    skills, fostering a positive impact on their academic
-                    journey and future prospects.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/cw3.jpeg"
-                      />
-                    </div>
-                    <div class="col-md-6">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/cw4.jpeg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-        </div>
+      <div class="timeline-item left" data-aos="fade-right">
+        <h4>Quinbay Technologies</h4>
+        <p class="role">Software Developer Intern</p>
+        <p class="duration">Jul 2020 – Jan 2021 | Bangalore, India</p>
+        <ul>
+          <li>Developed OCR + NLP tools with AWS & Google Vision OCR to automate data extraction (-75% manual work).</li>
+          <li>Implemented Flask-based microservices for audio transcription and text processing.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END Projects Section -->
 
-    <!-- **** Hobbies Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Hobbies</h2>
-
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Dance</h3>
-                <div>
-                  <p class="mb-4">
-                    I used to learn Indian classical dance form called
-                    Bharatnatyam. I have also taken training in western dance
-                    forms like freestyle and jazz.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <div
-                  data-tilt
-                  data-tilt-max="4"
-                  data-tilt-glare="true"
-                  data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt"
-                >
-                  <div class="row">
-                    <!-- Add a row -->
-                    <div class="col-md-4">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/hobby1.jpg"
-                      />
-                    </div>
-                    <div class="col-md-4">
-                      <img
-                        alt="Project Image 2"
-                        class="img-fluid"
-                        src="assets/hobby3.jpg"
-                      />
-                    </div>
-                    <div class="col-md-4">
-                      <img
-                        alt="Project Image 1"
-                        class="img-fluid"
-                        src="assets/hobby2.jpg"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-        </div>
+      <div class="timeline-item right" data-aos="fade-left">
+        <h4>High Radius Corporation</h4>
+        <p class="role">Software Developer Intern</p>
+        <p class="duration">Apr 2020 – Jun 2020 | Bhubaneswar, India</p>
+        <ul>
+          <li>Built a payment-tracking website using React and DialogFlow chatbot for interactive support.</li>
+          <li>Integrated ML models to analyze financial data and improve decision accuracy.</li>
+        </ul>
       </div>
-    </section>
-    <!-- /END Projects Section -->
+    </div>
+  </section>
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper load-hidden">
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:nk1401@uw.edu"
-            >Email</a
-          >
-        </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section">
+    <h2 class="section-title" data-aos="fade-up">Projects</h2>
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a rel="noreferrer" href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-        </a>
-        <div class="social-links">
-          <a
-            rel="noreferrer"
-            href="https://www.linkedin.com/in/nidhikumar1401/"
-            target="_blank"
-          >
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a
-            rel="noreferrer"
-            href="https://github.com/nidhikumar"
-            target="_blank"
-          >
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- Notice: if you want to give me some credit, it will be huge for me! if not, put your data on it -->
-        <p class="footer__text">
-          © 2023 - Template developed by
-          <a
-            rel="noreferrer"
-            href="https://github.com/nidhikumar"
-            target="_blank"
-            >Nidhi Kumar</a
-          >
+    <!-- MeTILDA -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-info">
+        <h3>MeTILDA – Melodic Transcription in Language Documentation & Application</h3>
+        <p class="duration">Graduate Capstone | Jul 2024 – Mar 2025</p>
+        <p>
+          Developed a platform for visual pitch guides and rhythmic analysis aiding linguistic documentation and pronunciation.
+          Implemented using <b>Flask</b> and <b>ReactJS</b>.
         </p>
+        <a href="https://github.com/metilda-uw/metilda" target="_blank" class="cta-btn">Source Code</a>
+        <a href="https://metilda.herokuapp.com/" target="_blank" class="cta-btn">Live Demo</a>
       </div>
-    </footer>
-    <!-- /END Footer Section -->
+      <div class="project-image" data-tilt data-tilt-max="4">
+        <img src="assets/screenshot-metilda.jpg" alt="MeTILDA Screenshot">
+      </div>
+    </div>
 
-    <script defer type="module" src="index.js"></script>
-  </body>
+    <!-- Blood Bank iOS App -->
+<div class="project-card" data-aos="fade-up">
+  <div class="project-info">
+    <h3>Blood-Bank iOS App</h3>
+    <p class="duration">Graduate Project | Jan 2024 – Mar 2024</p>
+    <p>
+      Built a Flutter-based iOS application that connects donors and recipients 
+      for nearby blood donation needs, improving community response and awareness.
+    </p>
+    <a href="https://github.com/nidhikumar/blood-bank" target="_blank" class="cta-btn">Source Code</a>
+  </div>
+
+  <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+    <div class="gallery-track">
+      <img src="assets/project-blood-bank-1.jpg" alt="Blood Bank 1">
+      <img src="assets/project-blood-bank-2.jpg" alt="Blood Bank 2">
+      <img src="assets/project-blood-bank-3.jpg" alt="Blood Bank 3">
+      <img src="assets/project-blood-bank-4.jpg" alt="Blood Bank 4">
+    </div>
+  </div>
+</div>
+
+
+    <!-- CBIR -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-info">
+        <h3>Content-Based Image Retrieval with Relevance Feedback</h3>
+        <p class="duration">Graduate Project | Oct 2023</p>
+        <p>Interactive image search engine enabling filtering by color, brightness, and feedback learning.</p>
+        <a href="https://github.com/nidhikumar/CBIR-Relevance-Feedback" target="_blank" class="cta-btn">Source Code</a>
+      </div>
+      <div class="project-image" data-tilt data-tilt-max="4">
+        <img src="assets/proj1.png">
+      </div>
+    </div>
+
+    <!-- Budget Manager -->
+<div class="project-card" data-aos="fade-up">
+  <div class="project-info">
+    <h3>Budget Manager</h3>
+    <p class="duration">Personal Android Project | 2023</p>
+    <p>
+      Designed and developed a user-friendly Android app in Java for effortless expense management.
+      Users can categorize expenses, capture receipts, and even split transactions among groups — 
+      making financial tracking intuitive and collaborative.
+    </p>
+  </div>
+
+  <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+    <div class="gallery-track">
+      <img src="assets/BM1.png" alt="Budget Manager App 1">
+      <img src="assets/BM2.png" alt="Budget Manager App 2">
+    </div>
+  </div>
+</div>
+
+
+    <!-- Malarial Detection -->
+    <div class="project-card" data-aos="fade-up">
+      <div class="project-info">
+        <h3>Malarial Cell Detection</h3>
+        <p>Image processing model detecting infected cells — biomedical ML application.</p>
+      </div>
+    </div>
+  </section>
+
+ <!-- **** Conference Section **** -->
+<section id="conference">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">Conference Attended</h2>
+
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-info">
+          <h3>Society of Women Engineers (SWE) 2024 — Chicago</h3>
+          <p class="duration">October 2024</p>
+          <p>
+            Attended the <strong>Society of Women Engineers (SWE) 2024 Conference</strong> in Chicago, 
+            connecting with engineers, innovators, and leaders across the globe.  
+            Represented the University of Washington on scholarship, engaged in technical sessions, 
+            and participated in discussions promoting diversity and inclusion in technology.  
+            This experience deepened my commitment to fostering collaborative and inclusive engineering environments.
+          </p>
+        </div>
+
+        <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+          <div class="gallery-track">
+            <img src="assets/IMG_7850.jpg" alt="SWE Conference Chicago 1" class="fixed-orientation">
+            <img src="assets/IMG_8003.jpg" alt="SWE Conference Chicago 2" class="fixed-orientation">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- **** Community Work Section **** -->
+<section id="community">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">Community Work</h2>
+
+      <!-- GWC -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-info">
+          <h3>Girls Who Code & STEM Mentorship</h3>
+          <p>Mentored young women at KIIT to build coding and leadership skills in STEM.</p>
+        </div>
+      </div>
+
+      <!-- Back-To-School -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-info">
+          <h3>Back-To-School Initiative</h3>
+          <p class="duration">Ongoing Volunteering Project</p>
+          <p>
+            Led educational support initiatives for underprivileged students in rural areas, 
+            organizing drives to distribute school books, stationery, bags, and food supplies.  
+            This initiative aimed to improve classroom participation and early learning access 
+            for children from low-income families.
+          </p>
+        </div>
+
+        <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+          <div class="gallery-track">
+            <img src="assets/cw1.jpg" alt="Back To School 1">
+            <img src="assets/cw2.jpg" alt="Back To School 2">
+          </div>
+        </div>
+      </div>
+
+      <!-- KIIT NSS Drives -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-info">
+          <h3>KIIT NSS Drives</h3>
+          <p class="duration">KIIT University — Bhubaneswar</p>
+          <p>
+            Volunteered as part of the NSS initiative to uplift the education of underprivileged children.  
+            Conducted sessions teaching Mathematics and Basic English to help bridge foundational learning gaps, 
+            empowering students with confidence and curiosity toward academics.
+          </p>
+        </div>
+
+        <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+          <div class="gallery-track">
+            <img src="assets/cw3.jpeg" alt="NSS Drive 1">
+            <img src="assets/cw4.jpeg" alt="NSS Drive 2">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- **** Hobbies Section **** -->
+<section id="hobbies">
+  <div class="container">
+    <div class="project-wrapper">
+      <h2 class="section-title dark-blue-text">Hobbies</h2>
+
+      <!-- Dance -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-info">
+          <h3>Dance</h3>
+          <p class="duration">Bharatanatyam • Freestyle • Jazz</p>
+          <p>
+            I’ve been passionate about dance from a young age — trained in the Indian classical 
+            form <strong>Bharatanatyam</strong> and later explored Western dance styles like 
+            <strong>freestyle</strong> and <strong>jazz</strong>.  
+            For me, dance is not just art — it’s rhythm, discipline, and self-expression that 
+            brings energy and balance to everything I do.
+          </p>
+        </div>
+
+        <div class="project-image scroll-gallery" data-tilt data-tilt-max="3">
+          <div class="gallery-track">
+            <img src="assets/hobby1.jpg" alt="Dance Performance 1">
+            <img src="assets/hobby3.jpg" alt="Dance Performance 2">
+            <img src="assets/hobby2.jpg" alt="Dance Performance 3">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title" data-aos="fade-up">Contact</h2>
+    <div class="contact-wrapper" data-aos="fade-up">
+      <p>Want to collaborate or just say hi?</p>
+      <div class="contact-buttons">
+        <a href="mailto:nidhikr1401@gmail.com" class="cta-btn">Email Me</a>
+        <a href="https://www.linkedin.com/in/nidhikumar1401/" target="_blank" class="cta-btn">LinkedIn</a>
+        <a href="https://github.com/nidhikumar" target="_blank" class="cta-btn">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <a href="#hero" class="back-to-top"><i class="fas fa-angle-up fa-2x"></i></a>
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/nidhikumar1401/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/nidhikumar" target="_blank"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2025 Nidhi Kumar</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://unpkg.com/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+    VanillaTilt.init(document.querySelectorAll("[data-tilt]"), { max: 4, speed: 400, glare: true, "max-glare": 0.3 });
+
+    window.addEventListener("scroll", () => {
+      const scrollTop = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const progress = (scrollTop / height) * 100;
+      document.getElementById("progress-bar").style.width = progress + "%";
+    });
+
+    const toggleButton = document.getElementById("theme-toggle");
+    toggleButton.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      if (document.body.classList.contains("dark-mode")) {
+        toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+        localStorage.setItem("theme", "dark");
+      } else {
+        toggleButton.innerHTML = '<i class="fas fa-moon"></i>';
+        localStorage.setItem("theme", "light");
+      }
+    });
+
+    if (localStorage.getItem("theme") === "dark") {
+      document.body.classList.add("dark-mode");
+      toggleButton.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+  </script>
+</body>
 </html>
