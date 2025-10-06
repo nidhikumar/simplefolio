@@ -389,4 +389,104 @@
   .gallery-track img:hover {
     transform: scale(1.05);
   }
-    
+
+  /* ============================================
+   MOBILE FIXES & RESPONSIVE IMPROVEMENTS
+============================================ */
+
+@media (max-width: 768px) {
+    /* --- General Section Padding --- */
+    section {
+      padding: 60px 16px;
+    }
+  
+    /* --- Hero Section --- */
+    header#hero {
+      padding: 100px 20px;
+    }
+    header h1 {
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1rem;
+    }
+  
+    /* --- About Section --- */
+    .about-wrapper {
+      flex-direction: column;
+      text-align: center;
+    }
+    .profile-img {
+      width: 180px;
+      margin-bottom: 20px;
+    }
+    .about-text {
+      font-size: 1rem;
+    }
+  
+    /* --- Project Cards --- */
+    .project-card {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    .project-info, .project-image {
+      flex: 1 1 100%;
+    }
+    .project-info h3 {
+      font-size: 1.3rem;
+    }
+    .project-info p {
+      font-size: 0.95rem;
+    }
+  
+    /* --- Horizontal Scroll Galleries --- */
+    .scroll-gallery {
+      overflow-x: auto;
+      display: block;
+      white-space: nowrap;
+      padding: 10px 0;
+      width: 100%;
+    }
+    .gallery-track {
+      display: inline-flex;
+      gap: 10px;
+      padding: 0 5px;
+    }
+    .gallery-track img {
+      width: 180px;
+      height: auto;
+      border-radius: 8px;
+    }
+  
+    /* --- Timeline Items (for work/education) --- */
+    .timeline::after {
+      left: 20px;
+    }
+    .timeline-item {
+      width: 100%;
+      left: 0 !important;
+      margin: 0 0 40px 40px;
+    }
+    .timeline-item::before {
+      left: -30px;
+    }
+  
+    /* --- Contact Section --- */
+    .contact-buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    /* --- Footer --- */
+    .footer {
+      padding: 30px 10px;
+      font-size: 0.9rem;
+    }
+    .back-to-top {
+      top: -20px;
+      right: 20px;
+    }
+  }
+  
